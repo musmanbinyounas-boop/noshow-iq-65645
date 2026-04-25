@@ -30,6 +30,7 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     df["days_in_advance"] = (df["AppointmentDay"] - df["ScheduledDay"]).dt.days.clip(lower=0)
     df["is_same_day"] = (df["days_in_advance"] == 0).astype(int)
     df["scheduled_dow"] = df["ScheduledDay"].dt.dayofweek
+    df["is_weekend_appointment"] = df["AppointmentDay"].dt.dayofweek.isin([5, 6]).astype(int)
     return df
 
 
