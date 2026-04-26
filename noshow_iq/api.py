@@ -101,7 +101,7 @@ def health():
 
 @app.post("/predict")
 def predict(appt: Appointment):
-    raw = appt.dict()
+    raw = appt.model_dump()        # was: appt.dict()
     features = _featurize(raw)
     X = pd.DataFrame([features])[EXPECTED_FEATURES]
     proba = float(PIPE.predict_proba(X)[0, 1])
