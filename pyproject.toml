@@ -7,8 +7,15 @@ name = "noshow-iq-65645"
 version = "0.1.0"
 description = "Predict patient no-shows for clinic appointments"
 readme = "README.md"
-requires-python = ">=3.10"
+license = { file = "LICENSE" }
 authors = [{ name = "M. Usman Bin Younas" }]
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
 dependencies = [
   "fastapi>=0.115",
   "uvicorn[standard]>=0.30",
@@ -22,6 +29,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/musmanbinyounas-boop/noshow-iq-65645"
+Repository = "https://github.com/musmanbinyounas-boop/noshow-iq-65645"
 
 [tool.hatch.build.targets.wheel]
 packages = ["noshow_iq"]
