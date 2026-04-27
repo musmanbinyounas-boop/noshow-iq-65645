@@ -1,0 +1,33 @@
+{
+  "training_size": 88420,
+  "test_size": 22106,
+  "model": "LogisticRegression",
+  "imbalance_technique": "class_weight=balanced",
+  "metrics": {
+    "0": {
+      "precision": 0.9284865507183753,
+      "recall": 0.4871896610361637,
+      "f1-score": 0.6390572140228261,
+      "support": 17642.0
+    },
+    "1": {
+      "precision": 0.29589851350299634,
+      "recall": 0.8517025089605734,
+      "f1-score": 0.4392075319124357,
+      "support": 4464.0
+    },
+    "accuracy": 0.5607979734008867,
+    "macro avg": {
+      "precision": 0.6121925321106858,
+      "recall": 0.6694460849983686,
+      "f1-score": 0.539132372967631,
+      "support": 22106.0
+    },
+    "weighted avg": {
+      "precision": 0.8007441731679612,
+      "recall": 0.5607979734008867,
+      "f1-score": 0.5987003434473813,
+      "support": 22106.0
+    }
+  }
+}
