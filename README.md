@@ -1,5 +1,3 @@
-# noshow-iq-65645
-For noshow-iq-project
 ---
 title: NoShowIQ
 emoji: 🩺
@@ -15,18 +13,9 @@ Predict patient no-shows for clinic appointments.
 
 [![CI/CD](https://github.com/musmanbinyounas-boop/noshow-iq-65645/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/musmanbinyounas-boop/noshow-iq-65645/actions)
 
-- **Live:** https://musmanbinyounas-boop-noshow-iq-65645.hf.space
+- **Live:** https://musmanbinyounas-noshow-iq-65645.hf.space
 - **TestPyPI:** https://test.pypi.org/project/noshow-iq-65645/
-- **Docker Hub:** https://hub.docker.com/r/musmanbinyounas-boop/noshowiq
-
-## Quickstart
-```bash
-pip install -e .
-uvicorn noshow_iq.api:app --reload
-```
-
-## Architecture
-See concept guide.
+- **Docker Hub:** https://hub.docker.com/r/musmanbinyounas/noshowiq
 
 ## Endpoints
 - GET /health
