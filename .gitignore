@@ -37,8 +37,8 @@ Thumbs.db
 
 # ML artifacts – large binaries; track with DVC or similar if needed
 data/
-models/
-*.pkl
+# models/ (commented — we ship the trained model)
+# *.pkl (commented — we ship the trained model)
 *.joblib
 *.h5
 *.pt
