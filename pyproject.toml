@@ -31,5 +31,8 @@ dependencies = [
 Homepage = "https://github.com/musmanbinyounas-boop/noshow-iq-65645"
 Repository = "https://github.com/musmanbinyounas-boop/noshow-iq-65645"
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["noshow_iq"]
